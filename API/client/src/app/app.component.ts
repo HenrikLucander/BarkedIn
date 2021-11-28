@@ -17,7 +17,7 @@ export class AppComponent {
   }
 
   getUsers() {
-    this.http.get('https://localhost:44301/api/Users').subscribe(response => {
+    this.http.get('https://localhost:5001/api/Users').subscribe(response => {
       this.users = response;
     }, error => {
       console.log(error);
